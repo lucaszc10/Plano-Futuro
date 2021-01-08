@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Futuro</title>
+    <link rel=stylesheet href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            box-sizing: border-box;
+            
+            }
+        *, *:before, *:after {box-sizing:inherit;}
+        :root {font-size: 62.5%}
+        body {background-color: rgb(115, 50, 217)}
+        
+        header {
+            position: relative;
+            top: 6rem;
+            
+        }
+        .logo { 
+            
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 350px;
+        }
+        .logo img {
+            max-width: 12rem;
+            max-height: 12rem;
+            width: auto;
+            height: auto;
+            
+            
+            
+        }
+        
+        
+        .logo h1 {
+            font: 900 6rem/1.0 "Roboto", sans-serif;
+            color: #b8c60d;
+            position: relative;
+            top: 20px;
+        }
+        .foguete {
+            margin-top: 200px;
+            margin-right: 400px;
+            float: right;
+            }
+        .foguete img {
+            max-width: 50rem;
+            max-height: 50rem;
+            width: auto;
+            height: auto;
+            transform: rotate(-35deg);
+        }
+        
+        .texto {
+            display: flex;
+            position: relative;
+            top: 30rem;
+            margin-left: 300px;
+            width: 500px;
+            
+
+        }
+        .texto p {
+            display: inline;
+            font: 400 40px/1.0 "Roboto", sans-serif;
+            color:white;
+           
+        }
+        
+        .downArrow{
+	        position: absolute;
+            left: 48%;
+            top: 850px;
+        }
+        .bounce {
+            -moz-animation: bounce 3s infinite;
+            -webkit-animation: bounce 3s infinite;
+            animation: bounce 3s infinite;
+        }
+        @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+        }
+        @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+        }
+        @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+        }
+        
+        @media (max-width: 760px) {
+            .logo {
+                display: block;
+                margin: 0 300px;
+            }
+            .logo img {
+                margin-top: 50px;
+                max-width: 15rem;
+                max-height: 15rem;
+                width: auto;
+                height: auto;
+            }
+            .logo h1 {
+                font: 900 8rem/1.0 "Roboto", sans-serif;
+                position: relative;
+                right: 70px;
+                
+            }
+            .foguete {
+                margin: 0;
+                padding: 0;
+                float: none;
+                align-items: center;
+                position: relative;
+                left: 55%;
+                margin-top: 15rem; 
+            }
+            .foguete img {
+                max-width: 60rem;
+                max-height: 60rem;
+                width: auto;
+                height: auto;
+            }
+
+            .texto {
+                margin: 0;
+                top: 0;
+                display: flex;
+                position: relative;
+                left: 170px;
+            }
+            .downArrow {
+                position: absolute;
+                top: 110rem;
+                left: 70%;
+            }
+        }
+        
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class=logo>
+            <img src="./images/logo-sem-fundo.png" alt="Plano Futuro">
+            <h1>Plano Futuro</h1>
+        </div>
+    </header>
+    <main>
+        <div class="foguete">
+            <img src="./images/foguete.png" alt="foguete">
+        </div>
+        <div class="downArrow bounce">
+            <img width="80" height="80" alt="" src="./images/arrow-down.png">
+        </div>
+        <div class="texto">
+            <p>O Plano Futuro compromete-se com um planejamento financeiro personalizado, que atenda as suas necessidades.</p>
+
+        </div>
+        
+    
+    
+        
+    </main>
+</body>
+</html>
